@@ -12,14 +12,17 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat 'cd jenkins/scripts/test.sh'
+                        bat 'cd jenkins/scripts'
+                        sh test.sh
                     }
                 }
                 stage('Deliver') {
                             steps {
-                                bat 'cd jenkins/scripts/deliver.sh'
+                                bat 'cd jenkins/scripts'
+                                sh deliver.sh
                                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                                bat 'cd jenkins/scripts/kill.sh'
+                                bat 'cd jenkins/scripts'
+                                sh kill.sh
                             }
                         }
 
