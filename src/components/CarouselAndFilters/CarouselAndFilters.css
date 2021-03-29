@@ -1,0 +1,214 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+}
+.top img {
+  opacity: 0.5;
+  width: 100%;
+}
+.centered h1 {
+  font-size: 50px;
+}
+.optcont {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 40px 0px;
+}
+
+.opt-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+  background-color: dodgerblue;
+}
+.dropdown {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.column1 {
+  width: 23%;
+}
+.column1 button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+.btndown2 {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+.btndown1 {
+  padding: 25px;
+  background-color: white;
+  color: black;
+}
+.top {
+  position: relative;
+  background-color: rgba(8, 0, 0, 0.911);
+}
+
+.container1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.bottomMenu {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  padding-right: 0px;
+  margin-left: 10%;
+}
+.main-cont {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* flex: 25%; */
+  padding: 0 10px;
+}
+.cont {
+  background-color: black;
+}
+
+button {
+  background-color: Orange;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 15px 20px;
+}
+.btn {
+  color: dimgray;
+  background-color: black;
+}
+.centered button {
+  margin: 5px;
+}
+#center-btn2 {
+  background-color: Transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+#center-btn1 {
+  border: 2px solid orange;
+}
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+}
+.right {
+  right: 0;
+}
+
+.left,
+.right {
+  height: 70px;
+  width: 70px;
+  outline: white;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: #242526;
+  opacity: 0.5;
+  color: white;
+  z-index: 1000;
+}
+.left:hover,
+.right:hover {
+  background-color: black;
+}
+.column1:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 15%;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content li:hover {
+  background-color: coral;
+}
+
+.left p,
+.right p {
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .container1 {
+    /* width: 100%; */
+    display: flex;
+    width: auto;
+    /* justify-content: space-between; */
+    margin: 5px;
+    flex-direction: column;
+  }
+  .column1 {
+    width: 100%;
+    margin: 5px;
+  }
+  .opt-btn {
+    width: 30%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bottomMenu {
+    float: left;
+    display: flex;
+    bottom: auto;
+    position: relative;
+    left: auto;
+    margin: 0;
+  }
+  .btndown1 {
+    border: 1px solid #ccc;
+  }
+  .left,
+  .right {
+    top: 45%;
+  }
+  .bottomMenu button {
+    font-size: 15px;
+  }
+  .optcont {
+    flex-direction: column;
+    width: 90%;
+  }
+  .opt-btn {
+    width: 85%;
+    margin: 10px auto;
+  }
+  .main-cont {
+    flex-wrap: nowrap;
+  }
+}

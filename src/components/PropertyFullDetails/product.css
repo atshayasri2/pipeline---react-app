@@ -1,0 +1,147 @@
+.full-details {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  border-top: 2px solid #ccc;
+  padding: 50px;
+  /* background-color: #ccc; */
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  /* background-color: rgb(229, 231, 116); */
+  background-color: #ccc;
+}
+tr:nth-child(odd) {
+  /* background-color: rgb(189, 212, 104); */
+  background-color: #ccc;
+}
+.ActionButton {
+  text-align: center;
+  padding: 10px 0px;
+  display: flex;
+}
+.ActionButton button {
+  width: 49%;
+  display: inline-block;
+  font-size: 1rem;
+  background-color: goldenrod;
+}
+.ActionButton .Actionbtn1 {
+  margin-right: 10px;
+}
+.originalPrice {
+  text-decoration: line-through;
+  font-size: 15px;
+}
+.full-details-col2 span {
+  padding: 4px 10px;
+}
+.full-details-col2 {
+  font-size: 20px;
+  width: 50%;
+}
+.propertyType {
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: green;
+}
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: "✓ ";
+  color: green;
+}
+
+.location {
+  margin-top: 0px;
+}
+
+.full-details-col2 h3 {
+  margin: 2px auto;
+}
+
+.detailedInfo {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.detailedInfo span {
+  font-size: 20px;
+  color: #909090;
+  padding: 0;
+}
+.detailedInfo p {
+  font-size: 18px;
+}
+.infoBlock {
+  padding: 5px 10px 20px;
+}
+.sub-title {
+  font-weight: bold;
+}
+.contactOwner {
+  background-color: goldenrod;
+}
+
+.full-details img {
+  object-fit: cover;
+}
+
+.spinner-FullDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-details img {
+  height: 400px;
+  width: 400px;
+}
+@media screen and (max-width: 1024px) {
+  .ActionButton button {
+    width: 35%;
+  }
+  .full-details-col1 {
+    width: 40%;
+    height: 50%;
+  }
+  .full-details-col2 {
+    width: 50%;
+    font-size: 16px;
+  }
+  .full-details-col1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .ActionButton {
+    flex-direction: column;
+  }
+  .ActionButton button {
+    width: 70%;
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .full-details-col1 {
+    width: 40%;
+    height: 50%;
+  }
+  .full-details-col1 img {
+    width: 100%;
+    height: 100%;
+  }
+}
