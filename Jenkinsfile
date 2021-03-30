@@ -12,14 +12,14 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat test.bat
+                        bat 'test.bat'
                     }
                 }
                 stage('Deliver') {
                             steps {
-                                bat deliver.bat
+                                bat 'deliver.bat'
                                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                                bat kill.bat
+                                bat 'kill.bat'
                             }
                         }
 
