@@ -17,10 +17,6 @@ import ReactGA from "react-ga";
 
 // var history = createBrowserHistory();
 
-const TRACKING_ID = "UA-193145904-1";
-ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 // history.listen((location: any) => {
 //   ReactGA.set({ page: location.pathname });
 //   ReactGA.pageview(location.pathname);
