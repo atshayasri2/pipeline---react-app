@@ -1,0 +1,142 @@
+.topnav a {
+  color: black;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 15px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar1 {
+  background-color: black;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.navbar2 {
+  background-color: white;
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.header1 {
+  background-color: black;
+}
+.header2 {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.contact p {
+  margin: 5px;
+  text-align: left;
+}
+.contact {
+  width: 22%;
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+}
+.navbar2-sub {
+  padding: 10px;
+}
+.navbar1 span i,
+.d1 span {
+  color: rgba(255, 255, 255, 0.67);
+  line-height: 50px;
+  text-align: center;
+}
+button {
+  background-color: Orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+}
+.column2 button {
+  background-color: black;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.67);
+}
+.contact span {
+  float: left;
+  font-size: 50px;
+}
+
+#phone {
+  color: dodgerblue;
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar2 img {
+  padding: 0 20px;
+}
+.topnav .icon {
+  display: none;
+}
+.navbar-options {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .navbar1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    display: none;
+  }
+  .navbar2 {
+    flex-direction: row-reverse;
+    width: 90%;
+  }
+  .list-prop-btn {
+    display: none;
+  }
+  .navbar2-sub.responsive {
+    position: relative;
+  }
+  .navbar2-sub.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .navbar2-sub.responsive a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+  .nav2-links {
+    margin-top: 25px;
+    position: absolute;
+    z-index: 999;
+    left: -16px;
+    background-color: whitesmoke;
+  }
+}
